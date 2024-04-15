@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Talent Management Suite</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #667eea, #764ba2); /* Gradient background */
+            color: #ffffff; /* White text color */
+            font-family: Arial, sans-serif; /* Font family */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            position: relative; /* Positioning for image */
+        }
+        .container {
+            padding: 50px; /* Padding inside container */
+            margin: 50px auto; /* Center container horizontally */
+            max-width: 800px; /* Maximum width of container */
+        }
+        h1 {
+            text-align: center; /* Centered header */
+            margin-bottom: 50px; /* Space below header */
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+            margin-bottom: 30px; /* Space between cards */
+        }
+        .card-title {
+            color: #007bff; /* Blue card title color */
+        }
+        .card-text {
+            color: #333333; /* Dark text color for card content */
+        }
+        .btn-primary {
+            background-color: #007bff; /* Blue button background color */
+            border-color: #007bff; /* Blue button border color */
+        }
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker blue button background color on hover */
+            border-color: #0056b3; /* Darker blue button border color on hover */
+        }
+        .profile-img {
+            position: absolute; /* Positioning for image */
+            top: 53%; /* Vertical centering */
+            left: 30px; /* Distance from left side */
+            transform: translateY(-50%); /* Adjust vertical position */
+            width: 120px; /* Image width */
+            height: 120px; /* Image height */
+            border-radius: 50%; /* Circular shape */
+            border: 2px solid #ffffff; /* White border */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+            z-index: 1; /* Ensure image appears above other elements */
+        }
+    </style>
+</head>
+<body>
+    <!-- Circular image -->
+    <img src="https://wallpapercave.com/wp/wp7728123.jpg" alt="Profile Image" class="profile-img">
+
+    <div class="container">
+        <h1>NextGen Talent Management Suite</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Add Employee</h5>
+                        <p class="card-text">Add a new employee to the system.</p>
+                        <a href="/add" class="btn btn-primary">Add Employee</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">View Employees</h5>
+                        <p class="card-text">View the list of employees in the system.</p>
+                        <a href="/view" class="btn btn-primary">View Employees</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Update Employee</h5>
+                        <p class="card-text">Update information for existing employees.</p>
+                        <a href="/update" class="btn btn-primary">Update Employee</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Delete Employee</h5>
+                        <p class="card-text">Delete an employee from the system.</p>
+                        <a href="/delete" class="btn btn-primary">Delete Employee</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
